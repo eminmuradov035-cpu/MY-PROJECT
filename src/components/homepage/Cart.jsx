@@ -29,7 +29,7 @@ const Cart = ({ plant }) => {
         <button className="size-8 bg-green-600 text-white flex justify-center items-center hover:cursor-pointer" onClick={increment}><Plus/></button>
       </div>
 
-      <button className='bg-green-800 text-white px-4 py-2 rounded-4xl font-bold cursor-pointer shadow-2xl shadow-green-500 w-full sm:w-auto text-sm sm:text-base'>
+      <button className='bg-green-800 text-white px-4 py-2 rounded-4xl font-bold cursor-pointer transition duration-300 ease-in-out hover:scale-110 shadow-2xl shadow-green-500 w-full sm:w-auto text-sm sm:text-base'>
         BUY NOW ({plant.price * count}$)
       </button>
     </div>
