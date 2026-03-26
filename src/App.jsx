@@ -3,6 +3,7 @@ import Login from "./pages/Login"
 import Register from "./pages/Register"
 import { ToastContainer, toast } from 'react-toastify';
 import ForgotPassword from "./pages/ForgotPassword";
+import Cart from "./components/homepage/Cart";
 
 const App = () => {
 
@@ -10,11 +11,12 @@ const App = () => {
     <>
     <ToastContainer />
     {/* <Register/> */}
-    <ForgotPassword/>
-    
+    {/* <ForgotPassword/> */}
+    {/* // <Login /> */}
+     {/* <Homepage /> */}
     </>
-    // <Homepage />
-    // <Login />
+
+
 
   )
 }

@@ -16,22 +16,22 @@ const Register = () => {
 
     const validateStep = () => {
         if (!formData.name) {
-            toast.error("Enter your name first nigga",{
+            toast.error("Enter your name first",{
                 position: "top-center",
                 theme: "colored"
             })
         } else if (!formData.surname) {
-            toast.error("Enter your surname first nigga")
+            toast.error("Enter your surname first")
         } else if (!formData.age) {
-            toast.error("Enter your age first nigga")
+            toast.error("Enter your age first")
         } else {
             setStep(2)
         }
     }
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <form className="w-96 p-5 bg-gray-200 rounded-md shadow-lg   flex flex-col gap-5">
+    <div className="w-full h-screen flex items-center justify-center bg-black">
+      <form className="w-96 p-5 bg-sky-100 rounded-md shadow-2xl shadow-blue-500 flex flex-col gap-5">
         <h1 className="text-4xl font-bold text-center">Register Page</h1>
 
         {
@@ -43,7 +43,7 @@ const Register = () => {
             type="text"
             id="name"
             name="name"
-            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-200"
+            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           />
         </div>
 
@@ -54,7 +54,7 @@ const Register = () => {
             type="text"
             id="surname"
             name="surname"
-            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-200"
+            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           />
         </div>
 
@@ -65,12 +65,12 @@ const Register = () => {
             type="number"
             id="age"
             name="age"
-            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-200"
+            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           />
         </div>
 
         <button onClick={validateStep}
-         className="bg-yellow-500 text-white p-2 rounded-md hover:cursor-pointer hover:bg-yellow-600 transition-all duration-300 font-semibold active:scale-95">
+         className="bg-blue-500 text-white p-2 rounded-md hover:cursor-pointer hover:bg-blue-600 transition-all duration-300 font-semibold active:scale-95">
           Next
         </button>
             </> : <>
@@ -81,7 +81,7 @@ const Register = () => {
             type="email"
             id="email"
             name="email"
-            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-200"
+            className="border bg-white border-blue-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           />
         </div>
 
@@ -92,7 +92,7 @@ const Register = () => {
             type="password"
             id="password"
             name="password"
-            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-200"
+            className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           />
         </div>
 
@@ -100,14 +100,14 @@ const Register = () => {
             e.preventDefault()
           console.log(formData);
         }}
-         className="bg-yellow-500 text-white p-2 rounded-md hover:cursor-pointer hover:bg-yellow-600 transition-all duration-300 font-semibold active:scale-95">
+         className="bg-blue-500 text-white p-2 rounded-md hover:cursor-pointer hover:bg-blue-600 transition-all duration-300 font-semibold active:scale-95">
           Register
         </button>
 
             </>
         }
 
-<button className="text-center cursor-pointer text-zinc-600 font-bold hover:text-yellow-500">Alreadt have an account?</button>
+<button className="text-center cursor-pointer text-zinc-600 font-bold hover:text-blue-500">Alreadt have an account?</button>
 
        
       </form>
