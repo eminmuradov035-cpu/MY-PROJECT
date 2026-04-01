@@ -24,7 +24,7 @@ const Login = () => {
             placeholder="Enter your email"
             type="email"
             id="email"
-            name="email"
+            name="email" 
             className="border bg-white border-gray-300 p-2 rounded-md w-full active:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           />
         </div>
@@ -49,7 +49,6 @@ const Login = () => {
 
         
 <button className="text-center cursor-pointer text-zinc-600 font-bold hover:text-blue-500">Don't have an account?</button>
-
 <button className="text-center cursor-pointer text-zinc-600 font-bold hover:text-blue-500">Forgot Password again?</button>
       </div>
     </div>

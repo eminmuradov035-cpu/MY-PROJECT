@@ -11,15 +11,20 @@ const Cart = ({ plant }) => {
     const decrement = () => {
         setCount(prevState => prevState !== 1 ? prevState -1 : 1)
     }
+
   return (
-<div className='flex flex-col md:flex-row max-w-125 w-full h-fit rounded-xl bg-white overflow-hidden shadow-lg shadow-green-500'>
+<div className='flex flex-col md:flex-row max-w-125 w-full h-[420px] rounded-xl bg-white overflow-hidden shadow-lg shadow-green-500'>
   <img className='w-full md:w-50 h-64 md:h-auto object-cover' src={plant.imageUrl} alt="" />
-  <div className='px-5 py-10'>
+  <div className='px-5 py-10 flex flex-col justify-between'>
 
-    <h2 className='font-semibold text-xl sm:text-2xl'>{plant.title}</h2>
-    <p className='text-xs sm:text-sm text-zinc-400'>BY STUDIO AND FRIENDS</p>
+    <div>
+      <h2 className='font-semibold text-xl sm:text-2xl'>{plant.title}</h2>
+      <p className='text-xs sm:text-sm text-zinc-400'>BY STUDIO AND FRIENDS</p>
 
-    <p className='my-5 text-sm sm:text-base text-zinc-500'>{plant.description}</p>
+      <p className='my-5 text-sm sm:text-base text-zinc-500 max-h-24'>
+        {plant.description}
+      </p>
+    </div>
 
     <div className='flex flex-col sm:flex-row gap-5 items-center'>
       
