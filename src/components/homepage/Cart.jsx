@@ -18,7 +18,7 @@ const Cart = ({ plant }) => {
   <div className='px-5 py-10 flex flex-col justify-between'>
 
     <div>
-      <h2 className='font-semibold text-xl sm:text-2xl'>{plant.title}</h2>
+      <h2 className='font-semibold text-xl sm:text-2xl text-zinc-900'>{plant.title}</h2>
       <p className='text-xs sm:text-sm text-zinc-400'>BY STUDIO AND FRIENDS</p>
 
       <p className='my-5 text-sm sm:text-base text-zinc-500 max-h-24'>
@@ -30,7 +30,7 @@ const Cart = ({ plant }) => {
       
       <div className="flex gap-3 font-semibold text-xl sm:text-2xl border">
         <button className="size-8 bg-red-600 text-white flex justify-center items-center hover:cursor-pointer" onClick={decrement}><Minus/></button>
-        <p>{count}</p>
+        <p className="text-zinc-900">{count}</p>
         <button className="size-8 bg-green-600 text-white flex justify-center items-center hover:cursor-pointer" onClick={increment}><Plus/></button>
       </div>
 
