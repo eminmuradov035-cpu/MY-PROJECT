@@ -51,9 +51,8 @@ const Homepage = () => {
   }, [])
 
   return (
-    <div className={darkMode ? "bg-black text-white min-h-screen" : "bg-amber-50 min-h-screen"}>
+    <div className={darkMode ? "bg-black text-white min-h-screen" : "bg-amber-50 min-h-screen transition-colors duration-900 transition-all"}>
 
-      {/* ✅ NAVBAR */}
       <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-green-700 text-white">
         <h1 className="font-bold text-xl">MyShop</h1>
         
@@ -65,7 +64,7 @@ const Homepage = () => {
 
         <button 
           onClick={() => setDarkMode(!darkMode)}
-          className="bg-white text-black px-3 py-1 rounded-lg font-semibold"
+          className="bg-white text-black px-3 py-1 rounded-lg font-semibold transition-all duration-600 hover:scale-105"
         >
           {darkMode ? "Light" : "Dark"}
         </button>
